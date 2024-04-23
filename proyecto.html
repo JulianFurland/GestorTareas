@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="CargarProyecto()">
+    <script src="script.js"></script>
+    <div class="mainframe">
+        <button id="btnVolverIndex" onclick="VolverAlIndex()">Volver</button>
+    <h1 id="h1Titulo"></h1>
+    <div class="line">
+        <h3>Agregar Tarea</h3>
+        <div class="col">
+            <input type="text" id="inputTaskTitle"  placeholder="Nombre de la Tarea">
+            <input type="text" id="inputTaskDesc" placeholder= "Descripción">
+        </div>
+        <div class="line">
+            <h3>Fecha de Vencimiento:</h3>
+            <input type="date" id="inputTaskExpire">
+            </div>
+    <button type="submit" onclick="AgregarTarea()" style="margin-left: 3em;">Guardar</button>
+    </div>
+    <div id="divDisplay"></div>
+    </div>
+</body>
+</html> 
